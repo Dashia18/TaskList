@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1485258582954
+Build-Jdk: 1.8.0_91
+Built-By: onos
+Bundle-Blueprint: OSGI-INF/blueprint/autowire.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: tasklist-persistence
+Bundle-SymbolicName: net.lr.tasklist.persistence
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: javax.inject;resolution:=optional,net.lr.tasklist.model;
+ version="[1.0,2)",org.ops4j.pax.cdi.api;version="[0.5,1)";resolution:=o
+ ptional,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.2.0.201605172007

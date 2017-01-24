@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: net.lr.tasklist.itests.KarafTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.714 sec - in net.lr.tasklist.itests.KarafTest

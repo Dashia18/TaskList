@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:ext="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0" xmlns:tx="http://aries.apache.org/xmlns/transactions/v2.0.0" xmlns:jpa="http://aries.apache.org/xmlns/jpa/v2.0.0">
+<bean id="taskAddCommand" class="net.lr.tasklist.command.TaskAddCommand" ext:field-injection="true">
+    <property name="taskService" ref="taskService"/>
+</bean>
+<bean id="taskDeleteCommand" class="net.lr.tasklist.command.TaskDeleteCommand" ext:field-injection="true">
+    <property name="taskService" ref="taskService"/>
+</bean>
+<bean id="taskGetCommand" class="net.lr.tasklist.command.TaskGetCommand" ext:field-injection="true">
+    <property name="taskService" ref="taskService"/>
+</bean>
+<bean id="taskListCommand" class="net.lr.tasklist.command.TaskListCommand" ext:field-injection="true">
+    <property name="taskService" ref="taskService"/>
+</bean>
+<reference id="taskService" interface="net.lr.tasklist.model.TaskService"/>
+<service ref="taskAddCommand" auto-export="interfaces">
+    <service-properties>
+        <entry key="osgi.command.scope" value="task"/>
+        <entry key="osgi.command.function" value="add"/>
+    </service-properties>
+</service>
+<service ref="taskDeleteCommand" auto-export="interfaces">
+    <service-properties>
+        <entry key="osgi.command.scope" value="task"/>
+        <entry key="osgi.command.function" value="delete"/>
+    </service-properties>
+</service>
+<service ref="taskGetCommand" auto-export="interfaces">
+    <service-properties>
+        <entry key="osgi.command.scope" value="task"/>
+        <entry key="osgi.command.function" value="get"/>
+    </service-properties>
+</service>
+<service ref="taskListCommand" auto-export="interfaces">
+    <service-properties>
+        <entry key="osgi.command.scope" value="task"/>
+        <entry key="osgi.command.function" value="list"/>
+    </service-properties>
+</service>
+</blueprint>
+

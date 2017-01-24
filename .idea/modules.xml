@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tasklist.iml" filepath="$PROJECT_DIR$/tasklist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-command/tasklist-command.iml" filepath="$PROJECT_DIR$/tasklist-command/tasklist-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-features/tasklist-features.iml" filepath="$PROJECT_DIR$/tasklist-features/tasklist-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-itests/tasklist-itests.iml" filepath="$PROJECT_DIR$/tasklist-itests/tasklist-itests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-model/tasklist-model.iml" filepath="$PROJECT_DIR$/tasklist-model/tasklist-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-persistence/tasklist-persistence.iml" filepath="$PROJECT_DIR$/tasklist-persistence/tasklist-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasklist-ui/tasklist-ui.iml" filepath="$PROJECT_DIR$/tasklist-ui/tasklist-ui.iml" />
+    </modules>
+  </component>
+</project>
